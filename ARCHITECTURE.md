@@ -12,8 +12,9 @@ If you are new to automated data pipelines, think of this as an assembly line in
 
 ```mermaid
 graph TD
-    A[data.gov.bn Portal] -->|GitHub Actions Cron| B[1. Ingest: Crawler & Manifest]
-    B -->|Raw Files / XLSX / CSV| C[2. Standardize: Tier 1 & 2 Parsers]
-    C -->|Tidy Data / Parquet / CSV| D[3. Describe: YAML Configs]
-    D -->|SQL Queries & Markdown| E[4. Build: Evidence.dev Static Site]
-    E -->|HTML / CSS / JS Output| F[5. Publish: GitHub Pages ($0 Hosting)]
+    A["data.gov.bn Portal"] -->|GitHub Actions Cron| B["1. Ingest: Crawler & Manifest"]
+    B -->|Raw Files / XLSX / CSV| C["2. Standardize: Tier 1 & 2 Parsers"]
+    C -->|Tidy Data / Parquet / CSV| D["3. Describe: YAML Configs"]
+    D -->|SQL Queries & Markdown| E["4. Build: Evidence.dev Static Site"]
+    E -->|HTML / CSS / JS Output| F["5. Publish: GitHub Pages ($0 Hosting)"]
+```
